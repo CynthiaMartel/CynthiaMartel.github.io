@@ -443,6 +443,9 @@ footer i{
 
 /* Pantallas de tablet (ancho máximo de 768px) */
 @media (max-width: 768px) {
+    body {
+        font-size: 12px; /* Reduce el tamaño de texto general */
+    }
     h2 {
         font-size: 26px;
         line-height: 28px;
@@ -472,7 +475,11 @@ footer i{
     nav ul {
         font-size: 16px;
     }
+    nav li {
+        margin-right: 15px; /* Ajusta el espacio entre elementos del menú */
+    }
 }
+
 
 /* Pantallas de teléfono móvil (ancho máximo de 480px) */
 @media (max-width: 480px) {
@@ -484,6 +491,7 @@ footer i{
         font-size: 14px;
         padding: 0;
         margin: 0;
+        font-size: 12px; /* Tamaño más pequeño para el texto del menú */
     }
     
     nav li {
@@ -511,7 +519,7 @@ footer i{
     }
 
     .contenedor-sobremi img {
-        width: 100%; /* Ocupa todo el ancho disponible */
+        width: 150px; /* Ajusta el tamaño de las imágenes para que se adapten */
     }
 
     .texto-sobremi {
@@ -530,6 +538,14 @@ footer i{
     .card-portfolio, .card-experiencia {
         width: 100%;
         padding: 10px;
+    }
+    .card-portfolio img {
+        width: 100%;
+        height: 100%; /* Ocupa toda la altura de la tarjeta */
+        object-fit: cover; /* Cubre todo el contenedor sin distorsionar la imagen */
+        object-position: top; /* Alinea la imagen hacia la parte superior */
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
     }
 
     .itemform {
