@@ -81,7 +81,7 @@ section{
 }
 
 #contenedor-mepresento {
-    background-image: url("../imagenes/Grisalrevés.png");
+    background-image: url("../imagenes/GrisMar3.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -217,7 +217,7 @@ i:hover{
     border-radius: 8px;
     padding-bottom:20px;
     margin:0px;
-    background-image: url("../imagenes/CardsPortfolioFondo3.png");
+    background-image: url("../imagenes/GrisMar3.png");
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -256,7 +256,7 @@ i:hover{
 
 #experiencia{
     padding-bottom: 20px;
-    background-color: #e6edee;
+    background-color: #d9e0e1;
     background-size: cover;
     background-position: center;
     min-height: 30vh;
@@ -317,7 +317,7 @@ i:hover{
 
 /*Formulario*/
 #contactar {
-    background-image: url("../imagenes/Grisalrevés.png");
+    background-image: url("../imagenes/GrisMar3.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -326,7 +326,6 @@ i:hover{
 }
 
 #contactar h2{
-
     color: white;
     text-align: justify;
     padding-top: 40px;
@@ -345,7 +344,7 @@ i:hover{
 .itemform{
     display:grid;
     grid-template-columns: 200px 350px;
-    justify-content: left;
+    justify-content: center;
     margin: 10px;
     
 }
@@ -362,17 +361,15 @@ i:hover{
 }
 
 input[type="submit"]{
-    background-color: #94b9c8;
     padding:10px 20px;
     border-radius: 8px;
-    color: black; /* Texto del botón en blanco */
+    color: #94b9c8; /* Texto del botón en blanco */
     cursor: pointer; /* Cambia el cursor cuando se pasa por encima del botón */
     grid-column:2/3;
     justify-self: end;
     font-weight: 550;
     font-size:13px;
-    
-    
+        
 }
 
 /* Estilo para el texto ingresado en los campos de formulario */
@@ -380,11 +377,10 @@ input[type="submit"]{
 #contactar textarea {
     font-family: "Montserrat", sans-serif; 
     font-size: 16px; 
-    color: #ffffff; 
     background-color: #2b2a2a; 
     padding: 10px; 
     border-radius: 5px; 
-    border: 1px solid #94b9c8; 
+     border:none;
 }
 
 /* Placeholder para el texto de ayuda para tenerlo en cuenta más adelante como idea!
