@@ -380,7 +380,8 @@ input[type="submit"]{
     background-color: #2b2a2a; 
     padding: 10px; 
     border-radius: 5px; 
-     border:none;
+    border:none;
+    color:#d9e0e1;
 }
 
 /* Placeholder para el texto de ayuda para tenerlo en cuenta más adelante como idea!
