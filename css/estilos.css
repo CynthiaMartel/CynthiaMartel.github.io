@@ -32,7 +32,6 @@ nav{
     width: 100%;
     background-color: #161616;
     border-bottom:1px solid white;
-    padding-top:10px;
 }
 nav ul {
     display: flex; /* Alinea los elementos de forma horizontal */
@@ -70,13 +69,14 @@ a:hover{
 }
 
 /*CSS IDs y Clase*/
-section{
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px; 
+section {
     scroll-margin-top: 80px; /* Ajusta este valor según la altura del navegador para que no tape los headers cuando se haga click */
 }
+
+section .section-padding {
+    padding: 10px 40px;
+}
+
 #inicio{
     padding-top:75px;
     
@@ -441,7 +441,7 @@ footer i{
 }
 
 /* Pantallas de tablet (ancho máximo de 768px) */
-@media (max-width: 768px) {
+@media (max-width: 835px) {
     body {
         font-size: 12px; /* Reduce el tamaño de texto general */
     }
@@ -485,6 +485,9 @@ footer i{
 
 /* Pantallas de teléfono móvil (ancho máximo de 480px) */
 @media (max-width: 480px) {
+    nav {
+        padding: 20px 0;
+    }
     nav ul {
         display: flex; /* Asegura la disposición horizontal */
         flex-direction: row; /* Mantén los elementos en fila */
@@ -496,7 +499,7 @@ footer i{
         font-size: 12px; /* Tamaño más pequeño para el texto del menú */
     }
     nav i{
-        font-size:10px;
+        font-size:12px;
     }
     
     nav li {
@@ -545,7 +548,7 @@ footer i{
 
     .card-portfolio, .card-experiencia {
         width: 100%;
-        padding: 10px;
+        /*padding: 10px;*/
     }
     .card-portfolio img {
         width: 100%;
@@ -564,5 +567,9 @@ footer i{
     input[type="submit"] {
         grid-column: 1; /* Coloca el botón en una fila separada */
         justify-self: center;
+    }
+
+    #sobremi {
+        padding: 0;
     }
 }
