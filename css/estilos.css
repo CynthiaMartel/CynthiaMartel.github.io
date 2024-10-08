@@ -474,6 +474,9 @@ footer i{
     nav ul {
         font-size: 16px;
     }
+    nav i{
+        font-size:10px;
+    }
     nav li {
         margin-right: 15px; /* Ajusta el espacio entre elementos del menú */
     }
@@ -491,6 +494,9 @@ footer i{
         padding: 0;
         margin: 0;
         font-size: 12px; /* Tamaño más pequeño para el texto del menú */
+    }
+    nav i{
+        font-size:10px;
     }
     
     nav li {
@@ -513,8 +519,8 @@ footer i{
     }
 
     .contenedor-sobremi {
-        padding: 10px;
-        gap: 15px;
+        padding: 5px;
+        gap: 10px;
     }
 
     .contenedor-sobremi img {
@@ -527,7 +533,10 @@ footer i{
     }
     
     h2 {
-        font-size: 24px;
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 15px;
     }
 
     .fila-portfolio, .fila-experiencia {
