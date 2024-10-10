@@ -440,7 +440,7 @@ footer i{
     }
 }
 
-/* Pantallas de tablet (ancho máximo de 768px) */
+/* Pantallas de tablet o pantallas más pequeñas (ancho máximo de 835px y 768px) */
 @media (max-width: 835px) {
     body {
         font-size: 12px; /* Reduce el tamaño de texto general */
