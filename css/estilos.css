@@ -38,7 +38,7 @@ nav ul {
     list-style: none; /* Elimina los puntos de la lista */
     justify-content: center; /* Centra los elementos en el contenedor */
     align-items: center;
-    padding: 20px 0; /* Añade padding superior e inferior */
+    padding: 25px 0; /* Añade padding superior e inferior */
     margin: 0; /* Elimina el margin por defecto */
     font-size:20px;
 }
@@ -180,6 +180,7 @@ i:hover{
     border: none; /* Elimina los bordes predeterminados del botón */
     float:right;
 }
+
 #portfolio {
     
     padding-bottom: 20px;
