@@ -1,10 +1,5 @@
+
 /*CSS general de elementos*/
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
-
 body{
     background-color: #2b2a2a;
     color:#ffffff;
@@ -16,7 +11,7 @@ body{
 h2{
     font-size: 30px;
     line-height: 30px;
-    padding-top:30px;
+    
 }
 h3{
     font-size:17px;
@@ -83,7 +78,7 @@ section .section-padding {
 }
 
 #contenedor-mepresento {
-    background-image: url("../imagenes/GrisMar3.png");
+    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -152,12 +147,6 @@ i:hover{
     display:flex;
     flex-direction:column;
     text-align: justify;
-    max-width: 1000px; /* Limita el ancho del bloque de texto */
-    color: white; /* O el color que prefieras */
-    padding:20px;
-    border-radius: 8px;
-    font-size:18px;  
-    background-color: rgba(255, 255, 255, 0.1); /* Color de fondo semitransparente (opcional) */
     box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
 }
 
