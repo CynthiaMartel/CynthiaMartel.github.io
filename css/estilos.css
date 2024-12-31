@@ -81,7 +81,7 @@ i:hover{
 
 /* Imagen: ajusta su tamaño */
 .contenedor-sobremi img {
-    width: 210px; /* Puedes ajustar el ancho según lo necesites */
+    width: 180px; /* Puedes ajustar el ancho según lo necesites */
     height: auto; /* Mantén la proporción de la imagen */
     border-radius: 8px; /* Opcional: Añade bordes redondeados a la imagen */   
 }

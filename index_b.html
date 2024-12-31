@@ -6,6 +6,9 @@
     <title>Portfolio Cynthia Martel</title>
     <!-- Enlazar el archivo output.css generado por Tailwind -->
     <link rel="stylesheet" href="./dist/output.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- Estilos personalizados-->
     <link rel="stylesheet" href="./css/estilos.css">
     <!-- Librería de fonts-->
@@ -33,7 +36,7 @@
       <section id="contenedor-mepresento" class="section-padding bg-[url('/imagenes/GrisMar3.png')] bg-cover bg-center">
         <section id="inicio" class="section-padding">
           <h2 class="text-4xl font-bold text-white mt-5">CYNTHIA MARTEL</h2>
-          <h3 class="profesion1 text-3xl font-bold text-white leading-tight mt-2">Programación</h3>
+          <h3 class="profesion1 text-3xl font-bold leading-tight mt-2 text-cyan-400">Programación</h3>
           <h3 class="profesion2 text-3xl font-bold text-white leading-tight">Desarrollo Creativo</h3>  
           <ul id="redessociales">
             <li class="linkedin"><a href="https://www.linkedin.com/in/cynthia-del-mar-martel-mart%C3%ADn-73b066186/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
@@ -41,9 +44,9 @@
           </ul>
         </section>
         <section id="sobremi" class="section-padding">
-          <section class="contenedor-sobremi flex items-start space-x-6">
+          <section class="contenedor-sobremi flex items-start">
             <img src="imagenes/cyn_foto_cv_250.jpeg" alt="Foto Cynthia Martel" class="h-48 w-48 object-cover rounded-full">
-            <section class="text-lg max-w-4xl w-full text-white p-5 rounded-lg bg-opacity-10 bg-white space-y-2">
+            <section class="text-lg max-w-4xl w-full text-white p-5 rounded-lg bg-opacity-50 bg-black space-y-2 ml-0">
               <p>Soy <strong>Cynthia del Mar Martel</strong>, apasionada del desarrollo web y multiplataforma.</p>
               <p>Terminé el grado en medicina veterinaria porque siento amor incondicional por la ciencia y los animales. Poco después, fui profesora en dos centros durante tres años, hasta que descubrí el mundo de la programación.</p>
               <p>Decidí cursar estudios reglados como <strong>Técnico Superior en Desarrollo de Aplicaciones Multiplataformas</strong>. Aquí es donde he encontrado mi sitio, en un mundo donde se mezclan la creatividad, la practicidad y el diseño artístico.</p>
@@ -60,9 +63,10 @@
           <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-white">PORTFOLIO</h2>
             <h3 class="text-3xl font-bold text-white leading-tight mt-2">Una mirada más profunda de mi trabajo</h3>
+
             <div class="flex flex-wrap justify-center gap-8 mt-8">
               <!-- Card 1 -->
-              <div class="bg-gray-800 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/4">
+              <div class="bg-gray-600 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/5">
                 <img src="./imagenes/webPortfolio.png" alt="Portfolio 1" class="w-full h-48 object-cover">
                 <p class="text-white text-lg font-semibold mt-4">TRABAJO WEB</p>
                 <div class="mt-4 mb-4">
@@ -74,7 +78,7 @@
                 </div>
               </div>
               <!-- Card 2 -->
-              <div class="bg-gray-800 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/4">
+              <div class="bg-gray-600 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/5">
                 <img src="./imagenes/githubcodigo.png" alt="Portfolio 2" class="w-full h-48 object-cover">
                 <p class="text-white text-lg font-semibold mt-4">PROYECTOS EN GITHUB</p>
                 <div class="mt-4 mb-4">
@@ -86,19 +90,19 @@
                 </div>
               </div>
               <!-- Card 3 -->
-              <div class="bg-gray-800 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/4">
+              <div class="bg-gray-600 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/5">
                 <img src="./imagenes/DiseñosPortfolio.png" alt="Portfolio 3" class="w-full h-48 object-cover">
                 <p class="text-white text-lg font-semibold mt-4">DISEÑOS</p>
                 <div class="mt-4 mb-4">
                   <a href="#">
                     <div class="masinfo">
-                        <button type="button" class="bg-blue-500 text-white p-2 rounded">MÁS INFO</button>
+                        <button type="button" class="bg-blue-500 text-white p-2 rounded mb-4 mr-4">MÁS INFO</button>
                     </div>
                 </a>
                 </div>
               </div>
               <!-- Card 4 -->
-              <div class="bg-gray-800 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/4">
+              <div class="bg-gray-600 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/5">
                 <img src="./imagenes/batteriaPortofolio.png" alt="Portfolio 4" class="w-full h-48 object-cover">
                 <p class="text-white text-lg font-semibold mt-4">INFO PERSONAL</p>
                 <div class="mt-4 mb-4">
