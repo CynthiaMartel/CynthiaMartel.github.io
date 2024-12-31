@@ -13,13 +13,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/1855534616.js" crossorigin="anonymous"></script> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
   </head>
-  <body class="font-style:Montserrat, sans-serif bg-[url('/imagenes/GrisMar3.png')] bg-cover bg-center">
+  <body class="font-style:Montserrat, sans-serif">
     <nav class="bg-slate-950">
       <div class="mx-auto max-w-10xl px-2 sm:px-6 lg:px-8">
         <div class="relative flex h-20 items-center justify-between">
-          <!-- Contenedor de los enlaces -->
           <div class="hidden sm:block w-full">
             <div class="flex justify-center space-x-12">
               <a href="#" class="rounded-md bg-gray-800 px-3 py-2 text-lg font-semibold text-white" aria-current="page">SOBRE MÍ</a>
@@ -32,55 +30,90 @@
         </div>
     </nav>
     <article>
-          <!--Bloque de Inicio-->
-          <section id="contenedor-mepresento" class="section-padding">
-            <section id="inicio" class="section-padding">
-                <h2 class="text-4xl font-bold text-white mt-5">CYNTHIA MARTEL</h2>
-                <h3 class="profesion1 text-3xl font-bold text-white mb-0 leading-tight">Programación</h3>
-                <h3 class="profesion2 text-3xl font-bold text-white mb-0 leading-tight">Desarrollo Creativo</h3>  
-                <ul id="redessociales">
-                    <li class="linkedin"><a href="https://www.linkedin.com/in/cynthia-del-mar-martel-mart%C3%ADn-73b066186/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://www.instagram.com/codingdreamroutes.cynthiamart/" target="_blank"> <i class="fa-brands fa-square-instagram"></i></a></li>
-                </ul>
+      <section id="contenedor-mepresento" class="section-padding bg-[url('/imagenes/GrisMar3.png')] bg-cover bg-center">
+        <section id="inicio" class="section-padding">
+          <h2 class="text-4xl font-bold text-white mt-5">CYNTHIA MARTEL</h2>
+          <h3 class="profesion1 text-3xl font-bold text-white leading-tight mt-2">Programación</h3>
+          <h3 class="profesion2 text-3xl font-bold text-white leading-tight">Desarrollo Creativo</h3>  
+          <ul id="redessociales">
+            <li class="linkedin"><a href="https://www.linkedin.com/in/cynthia-del-mar-martel-mart%C3%ADn-73b066186/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/codingdreamroutes.cynthiamart/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+          </ul>
+        </section>
+        <section id="sobremi" class="section-padding">
+          <section class="contenedor-sobremi flex items-start space-x-6">
+            <img src="imagenes/cyn_foto_cv_250.jpeg" alt="Foto Cynthia Martel" class="h-48 w-48 object-cover rounded-full">
+            <section class="text-lg max-w-4xl w-full text-white p-5 rounded-lg bg-opacity-10 bg-white space-y-2">
+              <p>Soy <strong>Cynthia del Mar Martel</strong>, apasionada del desarrollo web y multiplataforma.</p>
+              <p>Terminé el grado en medicina veterinaria porque siento amor incondicional por la ciencia y los animales. Poco después, fui profesora en dos centros durante tres años, hasta que descubrí el mundo de la programación.</p>
+              <p>Decidí cursar estudios reglados como <strong>Técnico Superior en Desarrollo de Aplicaciones Multiplataformas</strong>. Aquí es donde he encontrado mi sitio, en un mundo donde se mezclan la creatividad, la practicidad y el diseño artístico.</p>
+              <p>Soy amante del <strong>aprendizaje constante</strong> y busco formas de reinventarme constantemente.</p>
+              <a href="#portfolio">
+                <div class="masinfo">
+                    <button type="button" class="bg-blue-500 text-white p-2 rounded">MÁS INFO</button>
+                </div>
+            </a>
             </section>
-            <!-- Bloque de sobre mí -->
-            <section id="sobremi" class="section-padding">
-                <section class="contenedor-sobremi flex items-start space-x-6"> <!-- Añadí espacio entre la imagen y el texto -->
-                    <img src="imagenes/cyn_foto_cv_250.jpeg" alt="Foto Cynthia Martel" class="h-48 w-48 object-cover rounded-full"> <!-- Imagen con clases de Tailwind -->
-                    <section class="text-lg max-w-4xl w-full text-white p-5 rounded-lg bg-opacity-10 bg-white space-y-2">
-                        <p>Soy <strong>Cynthia del Mar Martel</strong>, apasionada del desarrollo web y multiplataforma.</p>
-                        
-                        <!-- <p>Creativa y muy curiosa desde que tengo uso de razón, en mi tiempo libre escribo y trabajo en un proyector personal sobre cine
-                        Recibiendo clases desde pequeña en piano, y ahora autodidacta en otros instrumentos como el bajo y la batería.</p>
-                        
-                        <p>Además, hago varios deportes; escalada, OCR, calistenia y skateboarding. 
-                        Este último me enseña a que cuando <strong> uno se cae, siempre tiene la opción de levantarse con más fuerza.</strong></p> -->
-                        
-                        <p>Terminé el grado en medicina veterinaria porque siento amor incondicional por la ciencia y los animales. 
-                        Poco después, la enseñanza me empezó a llamar mucho la atención, y fui profesora en dos centros durante tres años, 
-                        hasta que <strong>descubrí el mundo de la programación</strong>. 
-                        <p>Me fui introduciendo por cuenta propia con conceptos básicos,
-                        pero terminó por absorberme por completo y sin frenos.</p>
-                        <p>Decidí entonces, cursar los estudios reglados como <strong>Técnico Superior en 
-                        Desarrollo de Aplicaciones Multiplataformas.</strong></p>
-                        <p>Siento que es aquí, en donde<strong> he encontrado mi sitio</strong>, descubriendo que es en este mundo, donde se mezclan la creatividad, la practicidad y el diseño artístico. 
-                        Disciplinas de las que estoy enamorada.</p>
-                        
-                        <p>Siempre en <strong>continuo crecimiento y aprendizaje</strong>, buscando formas de <strong>reinventarme constantemente.</strong>
-                        </p>
-                        <a href="#portfolio">
-                            <div class="masinfo">
-                                <button type="button" class="bg-blue-500 text-white p-2 rounded">MÁS INFO</button>
-                            </div>
-                        </a>
-                    </section>
-                </section>
-                
-                
-        
+          </section>
+        </section>  
+        <section id="portfolio" class="min-h-screen bg-gray-800 rounded-lg shadow-lg text-center py-16">
+          <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-white">PORTFOLIO</h2>
+            <h3 class="text-3xl font-bold text-white leading-tight mt-2">Una mirada más profunda de mi trabajo</h3>
+            <div class="flex flex-wrap justify-center gap-8 mt-8">
+              <!-- Card 1 -->
+              <div class="bg-gray-800 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/4">
+                <img src="./imagenes/webPortfolio.png" alt="Portfolio 1" class="w-full h-48 object-cover">
+                <p class="text-white text-lg font-semibold mt-4">TRABAJO WEB</p>
+                <div class="mt-4 mb-4">
+                  <a href="#">
+                    <div class="masinfo">
+                        <button type="button" class="bg-blue-500 text-white p-2 rounded">MÁS INFO</button>
+                    </div>
+                </a>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="bg-gray-800 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/4">
+                <img src="./imagenes/githubcodigo.png" alt="Portfolio 2" class="w-full h-48 object-cover">
+                <p class="text-white text-lg font-semibold mt-4">PROYECTOS EN GITHUB</p>
+                <div class="mt-4 mb-4">
+                  <a href="#">
+                    <div class="masinfo">
+                        <button type="button" class="bg-blue-500 text-white p-2 rounded">MÁS INFO</button>
+                    </div>
+                </a>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="bg-gray-800 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/4">
+                <img src="./imagenes/DiseñosPortfolio.png" alt="Portfolio 3" class="w-full h-48 object-cover">
+                <p class="text-white text-lg font-semibold mt-4">DISEÑOS</p>
+                <div class="mt-4 mb-4">
+                  <a href="#">
+                    <div class="masinfo">
+                        <button type="button" class="bg-blue-500 text-white p-2 rounded">MÁS INFO</button>
+                    </div>
+                </a>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="bg-gray-800 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/4">
+                <img src="./imagenes/batteriaPortofolio.png" alt="Portfolio 4" class="w-full h-48 object-cover">
+                <p class="text-white text-lg font-semibold mt-4">INFO PERSONAL</p>
+                <div class="mt-4 mb-4">
+                  <a href="#">
+                    <div class="masinfo">
+                        <button type="button" class="bg-blue-500 text-white p-2 rounded">MÁS INFO</button>
+                    </div>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
     </article>
-
-    
   </body>
 </html>
 

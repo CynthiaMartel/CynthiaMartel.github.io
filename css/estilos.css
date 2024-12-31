@@ -4,61 +4,15 @@ body{
     background-color: #2b2a2a;
     color:#ffffff;
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    font-weight: 550px;
   
 }
-h2{
-    font-size: 30px;
-    line-height: 30px;
-    
-}
-h3{
-    font-size:17px;
-}
 
-p {
-    color: white;
-    text-align: justify;
-    
-}
 nav{
     position: fixed;
     width: 100%;
-    background-color: #161616;
     border-bottom:1px solid white;
 }
-nav ul {
-    display: flex; /* Alinea los elementos de forma horizontal */
-    list-style: none; /* Elimina los puntos de la lista */
-    justify-content: center; /* Centra los elementos en el contenedor */
-    align-items: center;
-    padding: 25px 0; /* Añade padding superior e inferior */
-    margin: 0; /* Elimina el margin por defecto */
-    font-size:20px;
-}
 
-nav li {
-    margin-right: 80px; /* Espacio entre los elementos */
-}
-nav i{
-    font-size:30px;
-}
-a:any-link{
-    color:white
-
-}
-a:-webkit-any-link{
-    color:white
-
-}
-a:-moz-any-link{
-    color:white
-
-}
-a{
-    text-decoration:none;
-}
 a:hover{
     color:#94b9c8;  /*SIEMPRE SE SOBRE-ESCRIBE LO QUE ESTÁ ESCRITO DEBAJO. SI HAY UN BLANCO ENCIMA, PERO PONES AZUL DEBAJO, EL QUE APLICA ES EL AZUL*/
 }
@@ -78,7 +32,6 @@ section .section-padding {
 }
 
 #contenedor-mepresento {
-    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -87,19 +40,14 @@ section .section-padding {
     clear: both; /* Asegura que el bloque "Sobre mí" esté debajo de cualquier elemento flotante */   
 }
 
-.profesion1{
+.profesion1, .profesion2{
     color:#94b9c8;
-    padding-top: 15px;
-    font-size:20px;    
-}
-.profesion2{
-    color:#94b9c8;
-    font-size:20px;
-    padding-top: 10px;
-    padding-bottom:20px;    
+          
 }
 
+
 #redessociales {
+    padding-top: 15px;
     list-style: none; /* Elimina los puntos de la lista */
     display: flex; /* Alinea los iconos en fila */
     align-items: left; /* Alinea verticalmente los iconos con el texto */    
@@ -107,11 +55,11 @@ section .section-padding {
 
 #redessociales li {
     margin-right: 20px; /* Espacio entre los íconos */
-    padding-bottom:10px;
+    
 }
 
 i {
-    font-size: 50px; /* Ajusta el tamaño de los íconos si es necesario */
+    font-size: 50px; /* Ajuste del tamaño de los íconos */
 }
 i:hover{
     color:#94b9c8
@@ -131,28 +79,11 @@ i:hover{
     
 }
 
-.texto-sobremi p {
-    margin: 30px;    
-}
-
 /* Imagen: ajusta su tamaño */
 .contenedor-sobremi img {
     width: 210px; /* Puedes ajustar el ancho según lo necesites */
     height: auto; /* Mantén la proporción de la imagen */
     border-radius: 8px; /* Opcional: Añade bordes redondeados a la imagen */   
-}
-
-/* Texto dentro de la sección "Sobre mí" */
-.texto-sobremi {
-    display:flex;
-    flex-direction:column;
-    text-align: justify;
-    box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
-}
-
-/* Estilo para los párrafos */
-.texto-sobremi p {
-    margin-bottom: 8px; /* Añade espacio entre los párrafos */
 }
 
 .contenedor-sobremi .masinfo button{
@@ -170,58 +101,17 @@ i:hover{
     float:right;
 }
 
-#portfolio {
-    
-    padding-bottom: 20px;
-}
-#portfolio h2{
-    color: white;
-    text-align: justify;
-    padding-top: 40px;
-    margin-left:40px;
-    gap:10px;
-}
-
-#portfolio h3{
-    margin-left:40px;
-    padding-top:10px;
-    padding-bottom: 20px;
-    font-weight: 650; 
-    text-align:justify;
-    color: white;
-}
-
 /*Card portfolio*/
-.fila-portfolio{
-    display:flex;
-    flex-direction: row;
-    gap: 150px;
-    padding-bottom: 20px;
-    margin:35px;
-}
-.card-portfolio{
-    width: 500px;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+/*.card-portfolio{
+    
     background-color:#525252;
-    border-radius: 8px;
-    padding-bottom:20px;
-    margin:0px;
-    background-image: url("../imagenes/GrisMar3.png");
+    
     background-position: center;
     background-repeat: no-repeat;
-}
-.card-portfolio img{
-    width: 100%;
-    height: 200px;
-    max-height: 45%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
+}*/
 
-.fila-portfolio .masinfo button{
+.masinfo button{
     background-color: #94b9c8;
     padding:10px 20px;
     font-weight:550 ;
@@ -229,22 +119,10 @@ i:hover{
     color: black; /* Texto del botón en blanco */
     cursor: pointer; /* Cambia el cursor cuando se pasa por encima del botón */
     display:flex;
-    justify-content: center; /* Centra el texto horizontalmente */
-    align-items: center; /* Centra el texto verticalmente */
     float:right;  
-    background-color: #94b9c8;
     border-radius: 5px; 
-    border:none;
 }
-.card-portfolio p {
-    color: #94b9c8;
-    font-size: 20px;
-    font-weight: 600;
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    text-align: center; /* Asegura que el texto esté centrado dentro del contenedor */
-}
+
 
 #experiencia{
     padding-bottom: 20px;
