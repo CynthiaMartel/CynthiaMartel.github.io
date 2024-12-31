@@ -24,8 +24,8 @@
           <div class="hidden sm:block w-full">
             <div class="flex justify-center space-x-12">
               <a href="#" class="rounded-md bg-gray-800 px-3 py-2 text-lg font-semibold text-white" aria-current="page">SOBRE MÍ</a>
-              <a href="#" class="rounded-md px-3 py-2 text-lg font-semibold text-gray-300 hover:bg-gray-700">PORTFOLIO</a>
-              <i class="fa-brands fa-usb fa-rotate-270" style="color: #ffffff;" aria-hidden="true"></i>
+              <a href="#portfolio" class="rounded-md px-3 py-2 text-lg font-semibold text-gray-300 hover:bg-gray-700">PORTFOLIO</a>
+              <i class="fa-brands fa-usb fa-rotate-270 text-3xl" style="color: #ffffff;" aria-hidden="true"></i>
               <a href="#" class="rounded-md px-3 py-2 text-lg font-semibold text-gray-300 hover:bg-gray-700">SKILLS</a>
               <a href="#" class="rounded-md px-3 py-2 text-lg font-semibold text-gray-300 hover:bg-gray-700">CONTACTAR</a>
             </div>
@@ -33,11 +33,11 @@
         </div>
     </nav>
     <article>
-      <section id="contenedor-mepresento" class="section-padding bg-[url('/imagenes/GrisMar3.png')] bg-cover bg-center">
+      <section id="contenedor-mepresento" class="bg-[url('/imagenes/GrisMar3.png')] bg-cover bg-center">
         <section id="inicio" class="section-padding">
           <h2 class="text-4xl font-bold text-white mt-5">CYNTHIA MARTEL</h2>
-          <h3 class="profesion1 text-3xl font-bold leading-tight mt-2 text-cyan-400">Programación</h3>
-          <h3 class="profesion2 text-3xl font-bold text-white leading-tight">Desarrollo Creativo</h3>  
+          <h3 class="profesion1 text-3xl font-bold leading-tight mt-2">Programación</h3>
+          <h3 class="profesion2 text-3xl font-bold leading-tight">Desarrollo Creativo</h3>  
           <ul id="redessociales">
             <li class="linkedin"><a href="https://www.linkedin.com/in/cynthia-del-mar-martel-mart%C3%ADn-73b066186/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
             <li><a href="https://www.instagram.com/codingdreamroutes.cynthiamart/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
@@ -51,28 +51,29 @@
               <p>Terminé el grado en medicina veterinaria porque siento amor incondicional por la ciencia y los animales. Poco después, fui profesora en dos centros durante tres años, hasta que descubrí el mundo de la programación.</p>
               <p>Decidí cursar estudios reglados como <strong>Técnico Superior en Desarrollo de Aplicaciones Multiplataformas</strong>. Aquí es donde he encontrado mi sitio, en un mundo donde se mezclan la creatividad, la practicidad y el diseño artístico.</p>
               <p>Soy amante del <strong>aprendizaje constante</strong> y busco formas de reinventarme constantemente.</p>
-              <a href="#portfolio">
-                <div class="masinfo">
-                    <button type="button" class="bg-blue-500 text-white p-2 rounded">MÁS INFO</button>
-                </div>
-            </a>
+              <div class="mt-4 mb-4">
+                <a href="#portfolio">
+                  <div class="masinfo">
+                      <button type="button" class="bg-blue-500 text-white p-2 rounded mt-4">MÁS INFO</button>
+                  </div>
+              </a>
             </section>
           </section>
         </section>  
-        <section id="portfolio" class="min-h-screen bg-gray-800 rounded-lg shadow-lg text-center py-16">
-          <div class="container mx-auto px-4">
+        <section id="portfolio" class="min-h-screen bg-gray-800 shadow-lg py-8">
+          <div class="section-padding mx-auto px-4">
             <h2 class="text-4xl font-bold text-white">PORTFOLIO</h2>
-            <h3 class="text-3xl font-bold text-white leading-tight mt-2">Una mirada más profunda de mi trabajo</h3>
+            <h3 class="text-3xl font-bold leading-tight">Una mirada más profunda de mi trabajo</h3>
 
             <div class="flex flex-wrap justify-center gap-8 mt-8">
               <!-- Card 1 -->
               <div class="bg-gray-600 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/5">
                 <img src="./imagenes/webPortfolio.png" alt="Portfolio 1" class="w-full h-48 object-cover">
-                <p class="text-white text-lg font-semibold mt-4">TRABAJO WEB</p>
+                <p class="text-center text-white text-lg font-semibold mt-4">TRABAJO WEB</p>
                 <div class="mt-4 mb-4">
                   <a href="#">
                     <div class="masinfo">
-                        <button type="button" class="bg-blue-500 text-white p-2 rounded">MÁS INFO</button>
+                        <button type="button" class="bg-blue-500 text-white p-2 rounded mb-4">MÁS INFO</button>
                     </div>
                 </a>
                 </div>
@@ -80,11 +81,11 @@
               <!-- Card 2 -->
               <div class="bg-gray-600 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/5">
                 <img src="./imagenes/githubcodigo.png" alt="Portfolio 2" class="w-full h-48 object-cover">
-                <p class="text-white text-lg font-semibold mt-4">PROYECTOS EN GITHUB</p>
+                <p class="text-center text-white text-lg font-semibold mt-4">PROYECTOS EN GITHUB</p>
                 <div class="mt-4 mb-4">
                   <a href="#">
                     <div class="masinfo">
-                        <button type="button" class="bg-blue-500 text-white p-2 rounded">MÁS INFO</button>
+                        <button type="button" class="bg-blue-500 text-white p-2 rounded mb-4">MÁS INFO</button>
                     </div>
                 </a>
                 </div>
@@ -92,11 +93,11 @@
               <!-- Card 3 -->
               <div class="bg-gray-600 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/5">
                 <img src="./imagenes/DiseñosPortfolio.png" alt="Portfolio 3" class="w-full h-48 object-cover">
-                <p class="text-white text-lg font-semibold mt-4">DISEÑOS</p>
+                <p class="text-center text-white text-lg font-semibold mt-4">DISEÑOS</p>
                 <div class="mt-4 mb-4">
                   <a href="#">
                     <div class="masinfo">
-                        <button type="button" class="bg-blue-500 text-white p-2 rounded mb-4 mr-4">MÁS INFO</button>
+                        <button type="button" class="bg-blue-500 text-white p-2 rounded mb-4">MÁS INFO</button>
                     </div>
                 </a>
                 </div>
@@ -104,11 +105,11 @@
               <!-- Card 4 -->
               <div class="bg-gray-600 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/5">
                 <img src="./imagenes/batteriaPortofolio.png" alt="Portfolio 4" class="w-full h-48 object-cover">
-                <p class="text-white text-lg font-semibold mt-4">INFO PERSONAL</p>
+                <p class="text-center text-white text-lg font-semibold mt-4">INFO PERSONAL</p>
                 <div class="mt-4 mb-4">
                   <a href="#">
                     <div class="masinfo">
-                        <button type="button" class="bg-blue-500 text-white p-2 rounded">MÁS INFO</button>
+                        <button type="button" class="bg-blue-500 text-white p-2 rounded mb-4">MÁS INFO</button>
                     </div>
                 </a>
                 </div>
