@@ -26,7 +26,7 @@ section .section-padding {
     padding: 10px 40px;
 }
 
-#inicio{ /*Pading necesario para que Cynthia Martel no quede tapado por el navegador*/
+#inicio{
     padding-top:75px;
     
 }
@@ -35,7 +35,7 @@ section .section-padding {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 98vh;
+    min-height: 100vh;
     padding-top: 20px;
     clear: both; /* Asegura que el bloque "Sobre mí" esté debajo de cualquier elemento flotante */   
 }
@@ -59,7 +59,7 @@ section .section-padding {
 }
 
 i {
-    font-size: 50px; /* Ajuste del tamaño de los íconos */
+    font-size: 55px; /* Ajuste del tamaño de los íconos */
 }
 i:hover{
     color:#94b9c8
@@ -73,21 +73,48 @@ i:hover{
     gap: 50px; /* Espacio entre la imagen y el texto */
     padding-top:5px;
     padding-bottom:20px; /* Añade margen inferior */
+    padding-left:0px;
+    padding-right:0px;
     flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas más pequeñas */
     
 }
 
 /* Imagen: ajusta su tamaño */
 .contenedor-sobremi img {
-    width: 170px; /* Puedes ajustar el ancho según lo necesites */
+    width: 210px; /* Puedes ajustar el ancho según lo necesites */
     height: auto; /* Mantén la proporción de la imagen */
     border-radius: 8px; /* Opcional: Añade bordes redondeados a la imagen */   
 }
 
+.contenedor-sobremi .masinfo button{
+    background-color: #94b9c8;
+    padding:10px 20px;
+    border-radius: 8px;
+    color: black; /* Texto del botón en blanco */
+    cursor: pointer; /* Cambia el cursor cuando se pasa por encima del botón */
+    font-size:16px;
+    font-weight: 550;
+    display:flex;
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    border: none; /* Elimina los bordes predeterminados del botón */
+    float:right;
+}
+
+/*Card portfolio*/
+
+/*.card-portfolio{
+    
+    background-color:#525252;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+}*/
+
 .masinfo button{
     background-color: #94b9c8;
     padding:10px 20px;
-    font-weight:600 ;
+    font-weight:550 ;
     font-size:14px;
     color: black; /* Texto del botón en blanco */
     cursor: pointer; /* Cambia el cursor cuando se pasa por encima del botón */
