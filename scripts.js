@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Seleccionamos las tarjetas
-    const cards = document.querySelectorAll('.card, .h2-portfolio, .h3-portfolio');
+    const cards = document.querySelectorAll('.card, .h2-portfolio, .h3-portfolio, .h2-experiencia, .h2-skills, .fila-experiencia');
 
     // Función para mostrar las tarjetas con un pequeño retraso entre ellas
     const observer = new IntersectionObserver((entries, observer) => {

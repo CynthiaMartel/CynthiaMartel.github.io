@@ -26,14 +26,15 @@
         <div class="relative flex h-20 items-center justify-between">
           <div class="hidden sm:block w-full">
             <div class="flex justify-center space-x-12">
-              <a href="#" class="rounded-md bg-gray-800 px-3 py-2 text-lg font-semibold text-white" aria-current="page">SOBRE MÍ</a>
-              <a href="#portfolio" class="rounded-md px-3 py-2 text-lg font-semibold text-gray-300 hover:bg-gray-700">PORTFOLIO</a>
+              <a href="#" class="nav-link bg-gray-800 text-white" aria-current="page">SOBRE MÍ</a>
+              <a href="#portfolio" class="nav-link">PORTFOLIO</a>
               <i class="fa-brands fa-usb fa-rotate-270 text-3xl" style="color: #ffffff;" aria-hidden="true"></i>
-              <a href="#" class="rounded-md px-3 py-2 text-lg font-semibold text-gray-300 hover:bg-gray-700">SKILLS</a>
-              <a href="#" class="rounded-md px-3 py-2 text-lg font-semibold text-gray-300 hover:bg-gray-700">CONTACTAR</a>
+              <a href="#" class="nav-link">SKILLS</a>
+              <a href="#" class="nav-link">CONTACTAR</a>
             </div>
           </div>
         </div>
+      </div>
     </nav>
     <article>
       <section id="contenedor-mepresento" class="bg-[url('/imagenes/GrisMar3.png')] bg-cover bg-center">
@@ -49,7 +50,7 @@
         <section id="sobremi" class="section-padding">
           <section class="contenedor-sobremi flex items-start">
             <img src="imagenes/cyn_foto_cv_250.jpeg" alt="Foto Cynthia Martel" class="h-48 w-48 object-cover rounded-full">
-            <section class="text-xl max-w-4xl w-full text-white p-7 rounded-lg bg-opacity-50 bg-black space-y-2 ml-0">
+            <section class="text-xl max-w-4xl w-full text-white p-7 rounded-lg bg-opacity-65 bg-black space-y-2 ml-0">
               <p>Soy <strong>Cynthia del Mar Martel</strong>, apasionada por el <strong>desarrollo web y multiplataforma</strong>.</p>
               <p>Me gradué en medicina veterinaria, impulsada por mi amor incondicional por la ciencia y los animales. Más tarde, trabajé como profesora en dos centros durante tres años, hasta que descubrí mi verdadera vocación en el <strong>mundo de la programación</strong>.</p>
               <p>Decidí especializarme cursando el título de <strong>Técnico Superior en Desarrollo de Aplicaciones Multiplataformas</strong>. Aquí es donde he encontrado mi lugar, un entorno donde confluyen la creatividad, la funcionalidad y el diseño artístico.</p>
@@ -59,12 +60,13 @@
             
                 <a href="#portfolio">
                   <div class="masinfo">
-                      <button type="button" class="bg-blue-500 text-white p-2 rounded mt-4">MÁS INFO</button>
+                    <button type="button">MÁS INFO</button>
                   </div>
               </a>
             </section>
           </section>
-        </section>  
+        </section>
+      </section>   
         <section id="portfolio" class="portfolio min-h-screen bg-gray-800 shadow-lg">
           <div class="section-padding mx-auto">
             <h2 class="h2-portfolio text-3xl font-bold leading-tight mt-2 opacity-0 transform translate-y-12 transition-all duration-500">PORTFOLIO</h2>
@@ -78,7 +80,7 @@
                 <div class="mt-4 mb-4">
                   <a href="#">
                     <div class="masinfo">
-                        <button type="button" class="bg-blue-500 text-white p-2 rounded mb-4">MÁS INFO</button>
+                      <button type="button">MÁS INFO</button>
                     </div>
                 </a>
                 </div>
@@ -90,8 +92,8 @@
                 <div class="mt-4 mb-4">
                   <a href="#">
                     <div class="masinfo">
-                        <button type="button" class="bg-blue-500 text-white p-2 rounded mb-4">MÁS INFO</button>
-                    </div>
+                      <button type="button">MÁS INFO</button>
+                    </div>                    
                 </a>
                 </div>
               </div>
@@ -102,7 +104,7 @@
                 <div class="mt-4 mb-4">
                   <a href="#">
                     <div class="masinfo">
-                        <button type="button" class="bg-blue-500 text-white p-2 rounded mb-4">MÁS INFO</button>
+                      <button type="button">MÁS INFO</button>
                     </div>
                 </a>
                 </div>
@@ -114,14 +116,27 @@
                 <div class="mt-4 mb-4">
                   <a href="#">
                     <div class="masinfo">
-                        <button type="button" class="bg-blue-500 text-white p-2 rounded mb-4">MÁS INFO</button>
+                      <button type="button">MÁS INFO</button>
                     </div>
                 </a>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        <!--Bloque experiencia-->
+        <section id="experiencia" class="seccion section-padding">
+          <div class="titular-experienciayskillss"> <!--Este div para que se vean en la misma línea EXPERIENCIA & SKILLS-->
+              <h2 class= "h2-experiencia text-3xl font-bold leading-tight mt-2 opacity-0 transform translate-y-12 transition-all duration-500">EXPERIENCIA</h2>
+              <h2 class= "h2-skills text-3xl font-bold leading-tight mt-2 opacity-0 transform translate-y-12 transition-all duration-500">& SKILLS</h2>
+          </div>
+          
+          <div class="fila-experiencia">
+                <div class="card-experiencia">
+                <p>PRROYECTOS PERSONALES</p>  
+              </div>
+          </div>
+      </section>
+
       </section>
     </article>
   
