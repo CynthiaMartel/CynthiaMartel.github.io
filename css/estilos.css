@@ -3,8 +3,46 @@
 body{
     background-color: #2b2a2a;
     color:#ffffff;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif; 
+}
+section {
+    scroll-margin-top: 80px; /* Ajusta este valor según la altura del navegador para que no tape los headers cuando se haga click */
+}
+
+.header2 {
+    font-size: 1.875rem; /* Tailwind text-3xl */
+    font-weight: 700; /* Tailwind font-bold */
+    color: #ffffff; /* Tailwind text-white */
+    margin-top: 0.75rem; /* Tailwind mt-3 */
+  }
   
+  @media (min-width: 640px) { /* Tailwind sm */
+    .header2 {
+      font-size: 2.25rem; /* Tailwind sm:text-4xl */
+    }
+  }
+  
+  .header3 {
+    font-size: 1.5rem; /* Tailwind text-2xl */
+    font-weight: 700; /* Tailwind font-bold */
+    line-height: 1.375; /* Tailwind leading-tight */
+    margin-top: 0.5rem; /* Tailwind mt-2 */
+  }
+  
+  @media (min-width: 640px) { /* Tailwind sm */
+    .header3 {
+      font-size: 1.875rem; /* Tailwind sm:text-3xl */
+    }
+  }
+/* Para las animaciones de la página que van "subiendo" progresivamente para hacer scroll*/
+.transition {
+opacity: 0;
+transform: translateY(3rem); /* translate-y-12 */
+transition: all 0.10s ease-in-out; /* transition-all duration-500 */
+}
+
+section .section-padding {
+    padding: 10px 40px;
 }
 /* Estilos comunes para los enlaces */
 nav{
@@ -34,36 +72,12 @@ a:hover{
 }
 
 /*CSS IDs y Clase*/
-section {
-    scroll-margin-top: 80px; /* Ajusta este valor según la altura del navegador para que no tape los headers cuando se haga click */
-}
-
-section .section-padding {
-    padding: 10px 40px;
-}
-
-#inicio{
-    padding-top:75px;
-    
-}
-
-#contenedor-mepresento {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    padding-top: 20px;
-    clear: both; /* Asegura que el bloque "Sobre mí" esté debajo de cualquier elemento flotante */   
-}
-
 .profesion1, .profesion2{
     color:#94b9c8;
           
 }
 
-
 #redessociales {
-    padding-top: 15px;
     list-style: none; /* Elimina los puntos de la lista */
     display: flex; /* Alinea los iconos en fila */
     align-items: left; /* Alinea verticalmente los iconos con el texto */    
@@ -81,6 +95,21 @@ i:hover{
     color:#94b9c8
 }
 
+#inicio{ /*Necesario para que el nav no tape los primeros headers*/
+    padding-top:75px;
+    
+}
+
+#contenedor-mepresento {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 97vh;
+    padding-top: 20px;
+    clear: both; /* Asegura que el bloque "Sobre mí" esté debajo de cualquier elemento flotante */   
+}
+
+
 /* Contenedor principal para imagen y texto en Sobre mí */
 .contenedor-sobremi {
     display: flex; /* Activa Flexbox */
@@ -89,8 +118,6 @@ i:hover{
     gap: 50px; /* Espacio entre la imagen y el texto */
     padding-top:5px;
     padding-bottom:20px; /* Añade margen inferior */
-    padding-left:0px;
-    padding-right:0px;
     flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas más pequeñas */
     
 }
@@ -104,7 +131,6 @@ i:hover{
 
 .contenedor-sobremi .masinfo button{
     background-color: #94b9c8;
-    padding:10px 20px;
     border-radius: 8px;
     color: black; /* Texto del botón en blanco */
     cursor: pointer; /* Cambia el cursor cuando se pasa por encima del botón */
@@ -117,7 +143,9 @@ i:hover{
     float:right;
 }
 
-/*Card portfolio*/
+/*Card de la página*/
+
+
 
 /*.card-portfolio{
     
@@ -141,7 +169,7 @@ i:hover{
 
 
 #experiencia{
-    padding-bottom: 20px;
+    
     background-color: #d9e0e1;
     background-size: cover;
     background-position: center;

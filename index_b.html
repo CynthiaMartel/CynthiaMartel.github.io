@@ -26,7 +26,7 @@
         <div class="relative flex h-20 items-center justify-between">
           <div class="hidden sm:block w-full">
             <div class="flex justify-center space-x-12">
-              <a href="#" class="nav-link bg-gray-800 text-white" aria-current="page">SOBRE MÍ</a>
+              <a href="#" class="nav-link bg-gray-800 text-white" aria-current="page">SOBRE MÍ</a> <!--nav-link descrito en estilos.css para simplificar el html-->
               <a href="#portfolio" class="nav-link">PORTFOLIO</a>
               <i class="fa-brands fa-usb fa-rotate-270 text-3xl" style="color: #ffffff;" aria-hidden="true"></i>
               <a href="#" class="nav-link">SKILLS</a>
@@ -38,108 +38,128 @@
     </nav>
     <article>
       <section id="contenedor-mepresento" class="bg-[url('/imagenes/GrisMar3.png')] bg-cover bg-center">
-        <section id="inicio" class="section-padding">
-          <h2 class="text-4xl font-bold text-white mt-3">CYNTHIA MARTEL</h2>
-          <h3 class="profesion1 text-3xl font-bold leading-tight mt-2">Programación</h3>
-          <h3 class="profesion2 text-3xl font-bold leading-tight">Desarrollo Creativo</h3>  
-          <ul id="redessociales">
-            <li class="linkedin"><a href="https://www.linkedin.com/in/cynthia-del-mar-martel-mart%C3%ADn-73b066186/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="https://www.instagram.com/codingdreamroutes.cynthiamart/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+        <!-- Inicio -->
+        <section id="inicio" class="section-padding px-4 sm:px-6 lg:px-12 py-8">
+          <h2 class="header2">CYNTHIA MARTEL</h2>
+          <h3 class="profesion1 header3">Programación</h3>
+          <h3 class="profesion2 header3">Desarrollo Creativo</h3>
+          <!-- Redes Sociales -->
+          <ul id="redessociales" class="flex space-x-4 mt-4">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/cynthia-del-mar-martel-mart%C3%ADn-73b066186/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/codingdreamroutes.cynthiamart/"target="_blank">
+                <i class="fa-brands fa-square-instagram"></i>
+              </a>
+            </li>
           </ul>
         </section>
-        <section id="sobremi" class="section-padding">
-          <section class="contenedor-sobremi flex items-start">
-            <img src="imagenes/cyn_foto_cv_250.jpeg" alt="Foto Cynthia Martel" class="h-48 w-48 object-cover rounded-full">
-            <section class="text-xl max-w-4xl w-full text-white p-7 rounded-lg bg-opacity-65 bg-black space-y-2 ml-0">
+        <!-- Sobre mí -->
+        <section id="sobremi" class="section-padding px-4 sm:px-6 lg:px-12 py-8">
+          <section class="contenedor-sobremi flex flex-col md:flex-row items-center md:items-start md:space-x-6">
+            <!-- Imagen -->
+            <img 
+              src="imagenes/cyn_foto_cv_250.jpeg" 
+              alt="Foto Cynthia Martel" 
+              class="h-15 w-25 sm:h-32 sm:w-32 md:h-40 md:w-40 object-cover rounded-full"
+            >
+            <!-- Texto -->
+            <section class="text-base sm:text-lg md:text-xl w-full max-w-5xl text-white p-4 sm:p-6 bg-black bg-opacity-65 rounded-lg space-y-4 mt-4 md:mt-0 mx-auto">
               <p>Soy <strong>Cynthia del Mar Martel</strong>, apasionada por el <strong>desarrollo web y multiplataforma</strong>.</p>
               <p>Me gradué en medicina veterinaria, impulsada por mi amor incondicional por la ciencia y los animales. Más tarde, trabajé como profesora en dos centros durante tres años, hasta que descubrí mi verdadera vocación en el <strong>mundo de la programación</strong>.</p>
               <p>Decidí especializarme cursando el título de <strong>Técnico Superior en Desarrollo de Aplicaciones Multiplataformas</strong>. Aquí es donde he encontrado mi lugar, un entorno donde confluyen la creatividad, la funcionalidad y el diseño artístico.</p>
               <p>Soy una entusiasta del <strong>aprendizaje continuo</strong>, siempre buscando nuevas formas de reinventarme.</p>
-              <p>¡ Le invito a explorar esta página para conocer más sobre mí y mi trayectoria profesional !</p>
+              <!-- Botón -->
               <div class="mt-4 mb-4">
-            
-                <a href="#portfolio">
+                <a href="#">
                   <div class="masinfo">
                     <button type="button">MÁS INFO</button>
-                  </div>
+                  </div>                    
               </a>
+              </div>
             </section>
           </section>
         </section>
-      </section>   
-        <section id="portfolio" class="portfolio min-h-screen bg-gray-800 shadow-lg">
-          <div class="section-padding mx-auto">
-            <h2 class="h2-portfolio text-3xl font-bold leading-tight mt-2 opacity-0 transform translate-y-12 transition-all duration-500">PORTFOLIO</h2>
-            <h3 class="h3-portfolio text-3xl font-bold leading-tight mt-2 opacity-0 transform translate-y-12 transition-all duration-500">Una mirada más profunda de mi trabajo</h3>
-
-            <div class="flex flex-wrap justify-between mt-8">
-              <!-- Card 1 -->
-              <div class="card bg-gray-600 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/5 opacity-0 transform translate-y-12 transition-all duration-500">
-                <img src="./imagenes/webPortfolio.png" alt="Portfolio 1" class="w-full h-48 object-cover rounded-lg">
-                <p class="text-center text-white text-lg font-semibold mt-4">TRABAJO WEB</p>
-                <div class="mt-4 mb-4">
-                  <a href="#">
-                    <div class="masinfo">
-                      <button type="button">MÁS INFO</button>
-                    </div>
-                </a>
+      </section>
+    <!--Sección Portfolio-->
+    <section id="portfolio" class="portfolio min-h-screen bg-gray-800 shadow-lg">
+      <div class="section-padding mx-auto">
+        <h2 class="h2-portfolio header2 transition">PORTFOLIO</h2>
+        <h3 class="h3-portfolio header3 transition">Una mirada más profunda de mi trabajo</h3>
+        <div class="flex flex-wrap justify-between mt-8">
+          <!-- Card 1 -->
+          <div class="card bg-gray-600 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/5 transition">
+            <img src="./imagenes/webPortfolio.png" alt="Portfolio 1" class="w-full h-48 object-cover rounded-lg">
+            <p class="text-center text-white text-lg font-semibold mt-4">TRABAJO WEB</p>
+            <div class="mt-4 mb-4">
+              <a href="#">
+                <div class="masinfo">
+                  <button type="button">MÁS INFO</button>
                 </div>
-              </div>
-              <!-- Card 2 -->
-              <div class="card bg-gray-600 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/5 opacity-0 transform translate-y-12 transition-all duration-500">
-                <img src="./imagenes/githubcodigo.png" alt="Portfolio 2" class="w-full h-48 object-cover rounded-lg">
-                <p class="text-center text-white text-lg font-semibold mt-4">PROYECTOS EN GITHUB</p>
-                <div class="mt-4 mb-4">
-                  <a href="#">
-                    <div class="masinfo">
-                      <button type="button">MÁS INFO</button>
-                    </div>                    
-                </a>
-                </div>
-              </div>
-              <!-- Card 3 -->
-              <div class="card bg-gray-600 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/5 opacity-0 transform translate-y-12 transition-all duration-500">
-                <img src="./imagenes/DiseñosPortfolio.png" alt="Portfolio 3" class="w-full h-48 object-cover rounded-lg">
-                <p class="text-center text-white text-lg font-semibold mt-4">DISEÑOS</p>
-                <div class="mt-4 mb-4">
-                  <a href="#">
-                    <div class="masinfo">
-                      <button type="button">MÁS INFO</button>
-                    </div>
-                </a>
-                </div>
-              </div>
-              <!-- Card 4 -->
-              <div class="card bg-gray-600 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/5 opacity-0 transform translate-y-12 transition-all duration-500">
-                <img src="./imagenes/batteriaPortofolio.png" alt="Portfolio 4" class="w-full h-48 object-cover rounded-lg">
-                <p class="text-center text-white text-lg font-semibold mt-4">INFO PERSONAL</p>
-                <div class="mt-4 mb-4">
-                  <a href="#">
-                    <div class="masinfo">
-                      <button type="button">MÁS INFO</button>
-                    </div>
-                </a>
-                </div>
-              </div>
+            </a>
             </div>
           </div>
-        <!--Bloque experiencia-->
-        <section id="experiencia" class="seccion section-padding">
+          <!-- Card 2 -->
+          <div class="card bg-gray-600 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/5 transition">
+            <img src="./imagenes/githubcodigo.png" alt="Portfolio 2" class="w-full h-48 object-cover rounded-lg">
+            <p class="text-center text-white text-lg font-semibold mt-4">PROYECTOS EN GITHUB</p>
+            <div class="mt-4 mb-4">
+              <a href="#">
+                <div class="masinfo">
+                  <button type="button">MÁS INFO</button>
+                </div>                    
+            </a>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="card bg-gray-600 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/5 transition">
+            <img src="./imagenes/DiseñosPortfolio.png" alt="Portfolio 3" class="w-full h-48 object-cover rounded-lg">
+            <p class="text-center text-white text-lg font-semibold mt-4">DISEÑOS</p>
+            <div class="mt-4 mb-4">
+              <a href="#">
+                <div class="masinfo">
+                  <button type="button">MÁS INFO</button>
+                </div>
+            </a>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="card bg-gray-600 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/5 transition">
+            <img src="./imagenes/batteriaPortofolio.png" alt="Portfolio 4" class="w-full h-48 object-cover rounded-lg">
+            <p class="text-center text-white text-lg font-semibold mt-4">INFO PERSONAL</p>
+            <div class="mt-4 mb-4">
+              <a href="#">
+                <div class="masinfo">
+                  <button type="button">MÁS INFO</button>
+                </div>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Bloque experiencia-->
+    <section id="experiencia" class="experiencia min-h-screen bg-gray-800 shadow-lg">
+        <div class="section-padding mx-auto">
           <div class="titular-experienciayskillss"> <!--Este div para que se vean en la misma línea EXPERIENCIA & SKILLS-->
-              <h2 class= "h2-experiencia text-3xl font-bold leading-tight mt-2 opacity-0 transform translate-y-12 transition-all duration-500">EXPERIENCIA</h2>
-              <h2 class= "h2-skills text-3xl font-bold leading-tight mt-2 opacity-0 transform translate-y-12 transition-all duration-500">& SKILLS</h2>
+              <h2 class= "header2 h2-experiencia transition">EXPERIENCIA</h2>
+              <h2 class= "header2 h2-skills transition">& SKILLS</h2>
           </div>
-          
-          <div class="fila-experiencia">
-                <div class="card-experiencia">
-                <p>PRROYECTOS PERSONALES</p>  
-              </div>
+        
+        <div class="fila-experiencia">
+          <div class="card card-experiencia">
+          <p>PRROYECTOS PERSONALES</p>  
           </div>
-      </section>
+        </div>
+      </div>
+  </section>
 
-      </section>
-    </article>
-  
+  </section>
+  </article>
+
   </body>
 </html>
 
