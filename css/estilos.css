@@ -122,7 +122,7 @@ i:hover{
     
 }
 
-/* Imagen: ajusta su tamaño */
+/* Imagen de mi CV */
 .contenedor-sobremi img {
     width: 210px; /* Puedes ajustar el ancho según lo necesites */
     height: auto; /* Mantén la proporción de la imagen */
@@ -144,7 +144,24 @@ i:hover{
 }
 
 /*Card de la página*/
+.custom-card {
+    background-color: #4b5563; /* bg-gray-600 */
+    border-radius: 0.5rem;    /* rounded-lg */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); /* shadow-lg */
+    width: 100%;             /* w-full */
+}
 
+@media (min-width: 640px) { /* sm:w-1/2 */
+    .custom-card {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) { /* lg:w-1/5 */
+    .custom-card {
+        width: 20%;
+    }
+}
 
 
 /*.card-portfolio{
@@ -168,19 +185,10 @@ i:hover{
 }
 
 
-#experiencia{
-    
-    background-color: #d9e0e1;
-    background-size: cover;
-    background-position: center;
-    min-height: 30vh;
-    color:#000000;
-    
-}
-#experiencia .titular-experienciayskillss{
-    display: flex; /* Activa Flexbox */
+
+#experiencia .titular-experienciayskillss{ /*Para que se vean los dos headers, uno al lado del otro, pero poder tener colores diferentes*/
+    display: flex; 
     flex-direction: row; 
-    color: black;
     text-align:justify;
     gap:10px; 
 
@@ -190,109 +198,21 @@ i:hover{
     color:#525252;
     
 }    
-#experiencia h3{
-    margin-left:40px;
-    padding-bottom: 20px;
-    text-align:justify;
-}
-.fila-experiencia{
-    display:flex;
-    flex-direction: row;
-    gap: 200px;
-    padding-bottom: 20px;
-    margin:35px;
-}
-
-.card-experiencia{
-    width: 2000px;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color:#2b2a2a;
-    border-radius: 5px;
-    padding-bottom:20px;
-    border: 2px solid black;   
-}
-
-.card-experiencia p {
-    color: #94b9c8;
-    font-size: 20px;
-    font-weight: 550;
-    display: flex;
-    padding:35px;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    text-align: center; /* Asegura que el texto esté centrado dentro del contenedor */
-}
 
 /*Formulario*/
-#contactar {
-    background-image: url("../imagenes/GrisMar3.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-bottom: 20px;
-
-}
-
 #contactar h2{
     color: white;
-    text-align: justify;
-    padding-top: 40px;
-    margin-left:40px;
-    gap:10px;
+
 }
 
 #contactar h3{
-    margin-left:40px;
-    padding-top:10px;
-    padding-bottom: 30px;
-    font-weight: 650;
-    text-align:justify;
+
     color: #94b9c8;
 }
-.itemform{
-    display:grid;
-    grid-template-columns: 200px 350px;
-    justify-content: center;
-    margin: 10px;
-    
-}
-.itemform label{
-    font-weight: 400;
-    font-size:20px;
-    margin-left:30px;
-    padding-top:10px;
-    padding-bottom: 20px;
-}
+.input-form {
+   background-color:#525252;
+   
 
-.itemform textarea{
-    height: 100px;
-}
-
-input[type="submit"]{
-    padding:10px 20px;
-    border-radius: 8px;
-    color: #94b9c8; /* Texto del botón en blanco */
-    cursor: pointer; /* Cambia el cursor cuando se pasa por encima del botón */
-    grid-column:2/3;
-    justify-self: end;
-    font-weight: 550;
-    font-size:13px;
-        
-}
-
-/* Estilo para el texto ingresado en los campos de formulario */
-#contactar input, 
-#contactar textarea {
-    font-family: "Montserrat", sans-serif; 
-    font-size: 16px; 
-    background-color: #2b2a2a; 
-    padding: 10px; 
-    border-radius: 5px; 
-    border:none;
-    color:#d9e0e1;
 }
 
 /* Placeholder para el texto de ayuda para tenerlo en cuenta más adelante como idea!
@@ -321,164 +241,3 @@ footer i{
     font-size:30px;
 }
 
-/* MEDIA resposive */
-/* Pantallas de PC más pequeñas (ancho máximo de 1024px) */
-@media (max-width: 1024px) {
-    nav ul {
-        font-size: 18px;
-        padding: 10px 0;
-    }
-    
-    .contenedor-sobremi {
-        flex-direction: column; /* Apila imagen y texto en vertical */
-        gap: 20px;
-    }
-    
-    .fila-portfolio {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .fila-experiencia {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .card-portfolio, .card-experiencia {
-        width: 100%; /* Ajusta al ancho del contenedor */
-    }
-}
-
-/* Pantallas de tablet o pantallas más pequeñas (ancho máximo de 835px y 768px) */
-@media (max-width: 835px) {
-    body {
-        font-size: 12px; /* Reduce el tamaño de texto general */
-    }
-    h2 {
-        font-size: 26px;
-        line-height: 28px;
-    }
-    
-    h3 {
-        font-size: 15px;
-    }
-    
-    .contenedor-sobremi img {
-        width: 180px; /* Ajusta el ancho de la imagen */
-    }
-
-    .texto-sobremi {
-        font-size: 16px;
-    }
-
-    .card-portfolio, .card-experiencia {
-        width: 100%;
-        height: auto; /* Ajusta la altura automáticamente */
-    }
-
-    .fila-portfolio, .fila-experiencia {
-        gap: 10px;
-    }
-
-    nav ul {
-        font-size: 16px;
-    }
-    nav i{
-        font-size:10px;
-    }
-    nav li {
-        margin-right: 15px; /* Ajusta el espacio entre elementos del menú */
-    }
-}
-
-
-/* Pantallas de teléfono móvil (ancho máximo de 480px) */
-@media (max-width: 480px) {
-    nav {
-        padding: 20px 0;
-    }
-    nav ul {
-        display: flex; /* Asegura la disposición horizontal */
-        flex-direction: row; /* Mantén los elementos en fila */
-        flex-wrap: wrap; /* Permite que los elementos se ajusten en filas si es necesario */
-        justify-content: center; /* Centra los elementos horizontalmente */
-        font-size: 14px;
-        padding: 0;
-        margin: 0;
-        font-size: 12px; /* Tamaño más pequeño para el texto del menú */
-    }
-    nav i{
-        font-size:12px;
-    }
-    
-    nav li {
-        margin-right: 20px; /* Ajusta el espacio entre los elementos */
-        margin-bottom: 0; /* Evita que los elementos se apilen uno debajo del otro */
-        list-style: none; /* Quita el estilo de lista para que no aparezcan puntos */
-    }
-
-    nav li:last-child {
-        margin-right: 0; /* Ajusta el margen del último elemento */
-    }
-
-    a:any-link, a:-webkit-any-link, a:-moz-any-link {
-        color: white;
-        text-decoration: none;
-    }
-    
-    a:hover {
-        color: #94b9c8;
-    }
-
-    .contenedor-sobremi {
-        padding: 5px;
-        gap: 10px;
-    }
-
-    .contenedor-sobremi img {
-        width: 150px; /* Ajusta el tamaño de las imágenes para que se adapten */
-    }
-
-    .texto-sobremi {
-        font-size: 14px;
-        padding: 10px;
-    }
-    
-    h2 {
-        font-size: 20px;
-    }
-    h3 {
-        font-size: 15px;
-    }
-
-    .fila-portfolio, .fila-experiencia {
-        margin: 10px;
-    }
-
-    .card-portfolio, .card-experiencia {
-        width: 100%;
-        /*padding: 10px;*/
-    }
-    .card-portfolio img {
-        width: 100%;
-        height: 100%; /* Ocupa toda la altura de la tarjeta */
-        object-fit: cover; /* Cubre todo el contenedor sin distorsionar la imagen */
-        object-position: top; /* Alinea la imagen hacia la parte superior */
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-    }
-
-    .itemform {
-        grid-template-columns: 1fr; /* Ajusta la forma de la cuadrícula */
-        gap: 10px;
-    }
-
-    input[type="submit"] {
-        grid-column: 1; /* Coloca el botón en una fila separada */
-        justify-self: center;
-    }
-
-    #sobremi {
-        padding: 0;
-    }
-}

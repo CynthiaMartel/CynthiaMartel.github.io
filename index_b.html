@@ -26,18 +26,18 @@
         <div class="relative flex h-20 items-center justify-between">
           <div class="hidden sm:block w-full">
             <div class="flex justify-center space-x-12">
-              <a href="#" class="nav-link bg-gray-800 text-white" aria-current="page">SOBRE MÍ</a> <!--nav-link descrito en estilos.css para simplificar el html-->
+              <a href="#inicio" class="nav-link bg-gray-800 text-white" aria-current="page">SOBRE MÍ</a> <!--nav-link descrito en estilos.css para simplificar el html-->
               <a href="#portfolio" class="nav-link">PORTFOLIO</a>
               <i class="fa-brands fa-usb fa-rotate-270 text-3xl" style="color: #ffffff;" aria-hidden="true"></i>
-              <a href="#" class="nav-link">SKILLS</a>
-              <a href="#" class="nav-link">CONTACTAR</a>
+              <a href="#experiencia" class="nav-link">SKILLS</a>
+              <a href="#contactar" class="nav-link">CONTACTAR</a>
             </div>
           </div>
         </div>
       </div>
     </nav>
     <article>
-      <section id="contenedor-mepresento" class="bg-[url('/imagenes/GrisMar3.png')] bg-cover bg-center">
+      <section id="contenedor-mepresento" class="bg-[url('/imagenes/GrisMar2.png')] bg-cover bg-center">
         <!-- Inicio -->
         <section id="inicio" class="section-padding px-4 sm:px-6 lg:px-12 py-8">
           <h2 class="header2">CYNTHIA MARTEL</h2>
@@ -64,10 +64,10 @@
             <img 
               src="imagenes/cyn_foto_cv_250.jpeg" 
               alt="Foto Cynthia Martel" 
-              class="h-15 w-25 sm:h-32 sm:w-32 md:h-40 md:w-40 object-cover rounded-full"
+              class="h-15 w-25 sm:h-32 sm:w-32 md:h-40 md:w-40"
             >
             <!-- Texto -->
-            <section class="text-base sm:text-lg md:text-xl w-full max-w-5xl text-white p-4 sm:p-6 bg-black bg-opacity-65 rounded-lg space-y-4 mt-4 md:mt-0 mx-auto">
+            <section class="text-base sm:text-lg md:text-xl max-w-4xl text-white p-4 sm:p-6 bg-black bg-opacity-65 rounded-lg space-y-4 mt-4 md:mt-0 mx-auto">
               <p>Soy <strong>Cynthia del Mar Martel</strong>, apasionada por el <strong>desarrollo web y multiplataforma</strong>.</p>
               <p>Me gradué en medicina veterinaria, impulsada por mi amor incondicional por la ciencia y los animales. Más tarde, trabajé como profesora en dos centros durante tres años, hasta que descubrí mi verdadera vocación en el <strong>mundo de la programación</strong>.</p>
               <p>Decidí especializarme cursando el título de <strong>Técnico Superior en Desarrollo de Aplicaciones Multiplataformas</strong>. Aquí es donde he encontrado mi lugar, un entorno donde confluyen la creatividad, la funcionalidad y el diseño artístico.</p>
@@ -91,7 +91,7 @@
         <h3 class="h3-portfolio header3 transition">Una mirada más profunda de mi trabajo</h3>
         <div class="flex flex-wrap justify-between mt-8">
           <!-- Card 1 -->
-          <div class="card bg-gray-600 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/5 transition">
+          <div class="card custom-card transition"> <!--custom-card: estilos en css para simplificar código de html y al ser 4 tarjetas-->
             <img src="./imagenes/webPortfolio.png" alt="Portfolio 1" class="w-full h-48 object-cover rounded-lg">
             <p class="text-center text-white text-lg font-semibold mt-4">TRABAJO WEB</p>
             <div class="mt-4 mb-4">
@@ -103,7 +103,7 @@
             </div>
           </div>
           <!-- Card 2 -->
-          <div class="card bg-gray-600 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/5 transition">
+          <div class="card custom-card transition">
             <img src="./imagenes/githubcodigo.png" alt="Portfolio 2" class="w-full h-48 object-cover rounded-lg">
             <p class="text-center text-white text-lg font-semibold mt-4">PROYECTOS EN GITHUB</p>
             <div class="mt-4 mb-4">
@@ -115,7 +115,7 @@
             </div>
           </div>
           <!-- Card 3 -->
-          <div class="card bg-gray-600 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/5 transition">
+          <div class="card custom-card transition">
             <img src="./imagenes/DiseñosPortfolio.png" alt="Portfolio 3" class="w-full h-48 object-cover rounded-lg">
             <p class="text-center text-white text-lg font-semibold mt-4">DISEÑOS</p>
             <div class="mt-4 mb-4">
@@ -127,7 +127,7 @@
             </div>
           </div>
           <!-- Card 4 -->
-          <div class="card bg-gray-600 rounded-lg shadow-lg w-full sm:w-1/2 lg:w-1/5 transition">
+          <div class="card custom-card transition">
             <img src="./imagenes/batteriaPortofolio.png" alt="Portfolio 4" class="w-full h-48 object-cover rounded-lg">
             <p class="text-center text-white text-lg font-semibold mt-4">INFO PERSONAL</p>
             <div class="mt-4 mb-4">
@@ -142,24 +142,115 @@
       </div>
     </section>
     <!--Bloque experiencia-->
-    <section id="experiencia" class="experiencia min-h-screen bg-gray-800 shadow-lg">
+    <section id="experiencia" class="experiencia min-h-screen bg-slate-50 shadow-lg">
         <div class="section-padding mx-auto">
           <div class="titular-experienciayskillss"> <!--Este div para que se vean en la misma línea EXPERIENCIA & SKILLS-->
-              <h2 class= "header2 h2-experiencia transition">EXPERIENCIA</h2>
+              <h2 class= "header2 h2-experiencia transition text-gray-800">EXPERIENCIA</h2>
               <h2 class= "header2 h2-skills transition">& SKILLS</h2>
           </div>
         
-        <div class="fila-experiencia">
-          <div class="card card-experiencia">
-          <p>PRROYECTOS PERSONALES</p>  
+          <div class="flex justify-between gap-4">
+            <!-- Card 1 -->
+            <div class="w-[1000px] h-[350px] flex flex-col justify-between bg-[#2b2a2a] rounded-md pb-5 border-2 border-solid">
+              <p class="text-[#94b9c8] text-lg font-semibold flex justify-center items-center text-center px-9 py-8">
+                PRÁCTICAS EN EMPRESA
+              </p>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="w-[1000px] h-[350px] flex flex-col justify-between bg-[#2b2a2a] rounded-md pb-5 border-2 border-solid">
+              <p class="text-[#94b9c8] text-lg font-semibold flex justify-center items-center text-center px-9 py-8">
+                PROYECTOS PERSONALES
+              </p>
+            </div>
           </div>
         </div>
+        
+  </section>
+ <!-- Bloque Contactar -->
+<section id="contactar" class="min-h-screen bg-gray-800 shadow-lg bg-[url('/imagenes/GrisMar3.png')] bg-cover">
+  <div class="section-padding mx-auto flex flex-col lg:flex-row lg:gap-10 items-center lg:items-stretch">
+    <!-- Parte izquierda: Encabezados y datos de contacto -->
+    <div class="lg:w-1/2 p-6 bg-gray-600 bg-opacity-60 text-white rounded-lg flex flex-col justify-start">
+      <div class="mt-6 space-y-4">
+        <h2 class="text-4xl font-bold">CONTACTA CONMIGO</h2>
       </div>
-  </section>
+      <div class="mt-6 space-y-4">
+        <div>
+          <h3 class="text-xl font-semibold">Teléfono</h3>
+          <p class="text-lg mt-1 text-white">+34 696 853 397</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">Email</h3>
+          <p class="text-lg mt-1 text-white">cynthiadelmarmartel@gmail.com</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">Dirección</h3>
+          <p class="text-lg mt-1 text-white">Las Palmas de Gran Canaria</p>
+        </div>
+      </div>
+    </div>
 
-  </section>
+    <!-- Parte derecha: Formulario -->
+    <div class="lg:w-1/2 p-6 rounded-lg flex flex-col justify-center">
+      <form action="#" method="POST" class="mx-auto mt-5 max-w-xl">
+        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+          <div>
+            <label for="first-name" class="block text-lg font-semibold text-white">Nombre</label>
+            <div class="mt-2.5">
+              <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="input-form block w-full rounded-md px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-cyan-200">
+            </div>
+          </div>
+          <div>
+            <label for="last-name" class="block text-lg font-semibold text-white">Apellidos</label>
+            <div class="mt-2.5">
+              <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="input-form block w-full rounded-md px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-cyan-200">
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label for="email" class="block text-lg font-semibold text-white">Email</label>
+            <div class="mt-2.5">
+              <input type="email" name="email" id="email" autocomplete="email" class="input-form block w-full rounded-md px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-cyan-200">
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label for="message" class="block text-lg font-semibold text-white">Mensaje</label>
+            <div class="mt-2.5">
+              <textarea name="message" id="message" rows="4" class="input-form block w-full rounded-md px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-cyan-200"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-x-4 sm:col-span-2 mt-6">
+          <div class="flex h-6 items-center">
+            <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
+            <button type="button" class="flex w-8 flex-none cursor-pointer rounded-full bg-gray-200 p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" role="switch" aria-checked="false" aria-labelledby="switch-1-label">
+              <span class="sr-only">Agree to policies</span>
+              <!-- Enabled: "translate-x-3.5", Not Enabled: "translate-x-0" -->
+              <span aria-hidden="true" class="size-4 translate-x-0 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"></span>
+            </button>
+          </div>
+          <label class="text-sm/6 text-gray-600" id="switch-1-label">
+            Seleccionado esto, aceptas nuestra
+            <a href="#" class="font-semibold text-indigo-600">política de&nbsp;privacidad</a>.
+          </label>
+        </div>
+        <div class="mt-6">
+          <button type="submit" class="block w-full rounded-md bg-[#94b9c8] px-3.5 py-2.5 text-center text-xl font-semibold text-black shadow-sm hover:bg-gray-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-200">CONTACTAR</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
   </article>
-
+    <!--Footer-->
+    <footer>
+      <ul>
+          <li><i class="fa-brands fa-usb fa-rotate-270" style="color: #ffffff;"></i></li>
+      </ul>
+    </footer>
   </body>
 </html>
 
