@@ -149,6 +149,7 @@ i:hover{
     border-radius: 0.5rem;    /* rounded-lg */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); /* shadow-lg */
     width: 100%;             /* w-full */
+    min-height: 22rem;       /* Aumenta la altura de las tarjetas */
 }
 
 @media (min-width: 640px) { /* sm:w-1/2 */

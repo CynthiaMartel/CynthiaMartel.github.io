@@ -1,178 +1,267 @@
 <!DOCTYPE html>
-    <html lang="es">
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cynthia Martel</title>
+    <!-- Enlazar el archivo output.css generado por Tailwind -->
+    <link rel="stylesheet" href="./dist/output.css">
 
-            <title>Portfolio Cynthia Martel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-            <link rel="stylesheet" href="./css/estilos.css">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <script src="https://kit.fontawesome.com/1855534616.js" crossorigin="anonymous"></script> <!--Librería de fontawesome-->
+    <!-- Estilos personalizados-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <!--Enlace con script para animaciones, etc-->
+    <script src="./scripts.js"></script>
+    <!-- Librería de fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/1855534616.js" crossorigin="anonymous"></script> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  </head>
+  <body class="font-style:Montserrat, sans-serif">
+    <nav class="bg-slate-950">
+      <div class="mx-auto max-w-10xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-20 items-center justify-between">
+          <div class="hidden sm:block w-full">
+            <div class="flex justify-center space-x-12">
+              <a href="#inicio" class="nav-link bg-gray-800 text-white" aria-current="page">SOBRE MÍ</a> <!--nav-link descrito en estilos.css para simplificar el html-->
+              <a href="#portfolio" class="nav-link">PORTFOLIO</a>
+              <i class="fa-brands fa-usb fa-rotate-270 text-3xl" style="color: #ffffff;" aria-hidden="true"></i>
+              <a href="#experiencia" class="nav-link">SKILLS</a>
+              <a href="#contactar" class="nav-link">CONTACTAR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <article>
+      <section id="contenedor-mepresento" class="bg-[url('/imagenes/GrisMar2.png')] bg-cover bg-center">
+        <!-- Inicio -->
+        <section id="inicio" class="section-padding px-4 sm:px-6 lg:px-12 py-8">
+          <h2 class="header2">CYNTHIA MARTEL</h2>
+          <h3 class="profesion1 header3">Programación</h3>
+          <h3 class="profesion2 header3">Desarrollo Creativo</h3>
+          <!-- Redes Sociales -->
+          <ul id="redessociales" class="flex space-x-4 mt-4">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/cynthia-del-mar-martel-mart%C3%ADn-73b066186/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/codingdreamroutes.cynthiamart/"target="_blank">
+                <i class="fa-brands fa-square-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!-- Sobre mí -->
+        <section id="sobremi" class="section-padding px-4 sm:px-6 lg:px-12 py-8">
+          <section class="contenedor-sobremi flex flex-col md:flex-row items-center md:items-start md:space-x-6">
+            <!-- Imagen -->
+            <img 
+              src="imagenes/cyn_foto_cv_250.jpeg" 
+              alt="Foto Cynthia Martel" 
+              class="h-15 w-25 sm:h-32 sm:w-32 md:h-40 md:w-40"
+            >
+            <!-- Texto -->
+            <section class="text-base sm:text-lg md:text-xl max-w-4xl text-white p-4 sm:p-6 bg-black bg-opacity-65 rounded-lg space-y-4 mt-4 md:mt-0 mx-auto">
+              <p>Soy <strong>Cynthia del Mar Martel</strong>, apasionada por el <strong>desarrollo web y multiplataforma</strong>.</p>
+              <p>Me gradué en medicina veterinaria, impulsada por mi amor incondicional por la ciencia y los animales. Más tarde, trabajé como profesora durante tres años, hasta que descubrí mi verdadera vocación en el <strong>mundo de la programación</strong>.</p>
+              <p>Decidí especializarme cursando el título de <strong>Técnico Superior en Desarrollo de Aplicaciones Multiplataformas</strong>. 
+              Aquí he encontrado mi lugar: un entorno donde confluyen el diseño creativo y la funcionalidad. Estoy convencida de que <strong>la tecnología es el espacio donde la creatividad se transforma en soluciones funcionales.</strong></p>
+              <p>Mi curiosidad y pasión por el <strong>aprendizaje continuo</strong> me impulsan a reinventarme constantemente y a enfrentar nuevos retos con entusiasmo.</p>
+
+              <!-- Botón -->
+              <div class="mt-4 mb-4">
+                <a href="#portfolio">
+                  <div class="masinfo">
+                    <button type="button">MÁS INFO</button>
+                  </div>                    
+              </a>
+              </div>
+            </section>
+          </section>
+        </section>
+      </section>
+    <!--Sección Portfolio-->
+    <section id="portfolio" class="portfolio min-h-[70vh] bg-gray-800 shadow-lg">
+      <div class="section-padding mx-auto">
+        <h2 class="h2-portfolio header2 transition">PORTFOLIO</h2>
+        <h3 class="h3-portfolio header3 transition">Una mirada más profunda de mi trabajo</h3>
+        <div class="flex flex-wrap justify-between mt-8">
+          <!-- Card 1 -->
+          <div class="card custom-card transition"> <!--custom-card: estilos en css para simplificar código de html y al ser 4 tarjetas-->
+            <img src="./imagenes/webPortfolio.png" alt="Portfolio 1" class="w-full h-48 object-cover rounded-lg">
+            <p class="text-center text-white text-lg font-semibold mt-4">TRABAJO WEB</p>
+            <div class="mt-4 mb-4">
+              <a href="#">
+                <div class="masinfo">
+                  <button type="button">MÁS INFO</button>
+                </div>
+            </a>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="card custom-card transition">
+            <img src="./imagenes/githubcodigo.png" alt="Portfolio 2" class="w-full h-48 object-cover rounded-lg">
+            <p class="text-center text-white text-lg font-semibold mt-4">PROYECTOS EN GITHUB</p>
+            <div class="mt-4 mb-4">
+              <a href="#">
+                <div class="masinfo">
+                  <button type="button">MÁS INFO</button>
+                </div>                    
+            </a>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="card custom-card transition">
+            <img src="./imagenes/DiseñosPortfolio.png" alt="Portfolio 3" class="w-full h-48 object-cover rounded-lg">
+            <p class="text-center text-white text-lg font-semibold mt-4">DISEÑOS</p>
+            <div class="mt-4 mb-4">
+              <a href="#">
+                <div class="masinfo">
+                  <button type="button">MÁS INFO</button>
+                </div>
+            </a>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="card custom-card transition">
+            <img src="./imagenes/batteriaPortofolio.png" alt="Portfolio 4" class="w-full h-48 object-cover rounded-lg">
+            <p class="text-center text-white text-lg font-semibold mt-4">INFO PERSONAL</p>
+            <div class="mt-4 mb-4">
+              <a href="#">
+                <div class="masinfo">
+                  <button type="button">MÁS INFO</button>
+                </div>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Bloque experiencia-->
+    <section id="experiencia" class="experiencia min-h-[60vh] bg-slate-50 shadow-lg">
+        <div class="section-padding mx-auto">
+          <div class="titular-experienciayskillss"> <!--Este div para que se vean en la misma línea EXPERIENCIA & SKILLS-->
+              <h2 class= "header2 h2-experiencia transition text-gray-800">EXPERIENCIA</h2>
+              <h2 class= "header2 h2-skills transition">& SKILLS</h2>
+          </div>
+        
+          <div class="flex justify-between gap-4">
+            <!-- Card 1 -->
+            <div class="w-[1000px] h-[350px] flex flex-col justify-between bg-[#2b2a2a] rounded-md pb-5 border-2 border-solid mt-4">
+              <p class="text-[#94b9c8] text-lg font-semibold flex justify-center items-center text-center px-9 py-8">
+                PRÁCTICAS EN EMPRESA
+              </p>
+            </div>
             
-            <!-- bootstrap -->
-            <!--
-            <link rel="stylesheet" href="./css/bootstrap.min.css">
-            <script src="./js/bootstrap.bundle.min.js"></script>
-            -->
+            <!-- Card 2 -->
+            <div class="w-[1000px] h-[350px] flex flex-col justify-between bg-[#2b2a2a] rounded-md pb-5 border-2 border-solid mt-4">
+              <p class="text-[#94b9c8] text-lg font-semibold flex justify-center items-center text-center px-9 py-8">
+                PROYECTOS PERSONALES
+              </p>
+            </div>
+          </div>
+        </div>
+        
+  </section>
+ <!-- Bloque Contactar -->
+<section id="contactar" class="min-h-[75vh] bg-gray-800 shadow-lg bg-[url('/imagenes/GrisMar3.png')] bg-cover">
+  <div class="section-padding mx-auto flex flex-col lg:flex-row lg:gap-10 items-center lg:items-stretch">
+    <!-- Parte izquierda: Encabezados y datos de contacto -->
+    <div class="w-1/2 p-6 bg-gray-700 bg-opacity-70 text-white rounded-lg flex flex-col justify-start mt-20">
+      <div class="mt-6 space-y-4">
+        <h2 class="text-4xl font-bold">CONTACTA CONMIGO</h2>
+      </div>
+      <div class="mt-6 space-y-4">
+        <div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-phone text-lg"></i>
+            <h3 class="text-xl font-semibold">Teléfono</h3>
+          </div>
+          <p class="text-lg mt-1 font-semibold text-white">+34 696 853 397</p>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-envelope text-lg"></i>
+            <h3 class="text-xl font-semibold">Email</h3>
+          </div>
+          <p class="text-lg mt-1 font-semibold text-white">cynthiadelmarmartel@gmail.com</p>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-location-dot text-lg"></i>
+            <h3 class="text-xl font-semibold">Dirección</h3>
+          </div>
+          <p class="text-lg mt-1 font-semibold text-white">Las Palmas de Gran Canaria</p>
+        </div>
+      </div>
+    </div>
 
-            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        </head>
-        <body>
-            <!--Menú Navegación-->
-            <nav>
-                <ul>
-                    <li><a href="#contenedor-mepresento">SOBRE MÍ</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><i class="fa-brands fa-usb fa-rotate-270" style="color: #ffffff;"></i></li>
-                    <li><a href="#experiencia">SKILLS</a></li>
-                    <li><a href="#contactar">CONTACTAR</a></li>
+    <!-- Parte derecha: Formulario -->
+    <div class="lg:w-1/2 p-6 rounded-lg flex flex-col justify-center">
+      <form action="#" method="POST" class="mx-auto mt-5 max-w-xl">
+        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+          <div>
+            <label for="first-name" class="block text-lg font-semibold text-white">Nombre</label>
+            <div class="mt-2.5">
+              <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="input-form block w-full rounded-md px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-cyan-200">
+            </div>
+          </div>
+          <div>
+            <label for="last-name" class="block text-lg font-semibold text-white">Apellidos</label>
+            <div class="mt-2.5">
+              <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="input-form block w-full rounded-md px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-cyan-200">
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label for="email" class="block text-lg font-semibold text-white">Email</label>
+            <div class="mt-2.5">
+              <input type="email" name="email" id="email" autocomplete="email" class="input-form block w-full rounded-md px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-cyan-200">
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label for="message" class="block text-lg font-semibold text-white">Mensaje</label>
+            <div class="mt-2.5">
+              <textarea name="message" id="message" rows="4" class="input-form block w-full rounded-md px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-cyan-200"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-x-4 sm:col-span-2 mt-6">
+          <div class="flex h-6 items-center">
+            <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
+            <button type="button" class="flex w-8 flex-none cursor-pointer rounded-full bg-gray-200 p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" role="switch" aria-checked="false" aria-labelledby="switch-1-label">
+              <span class="sr-only">Agree to policies</span>
+              <!-- Enabled: "translate-x-3.5", Not Enabled: "translate-x-0" -->
+              <span aria-hidden="true" class="size-4 translate-x-0 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"></span>
+            </button>
+          </div>
+          <label class="text-sm/6 text-gray-600" id="switch-1-label">
+            Seleccionado esto, aceptas nuestra
+            <a href="#" class="font-semibold text-indigo-600">política de&nbsp;privacidad</a>.
+          </label>
+        </div>
+        <div class="mt-6">
+          <button type="submit" class="block w-full rounded-md bg-[#94b9c8] px-3.5 py-2.5 text-center text-xl font-semibold text-black shadow-sm hover:bg-gray-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-200">CONTACTAR</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
 
-                </ul>
-            </nav>
 
-            <article>
-                <!--Bloque de Inicio-->
-                <section id="contenedor-mepresento" class="section-padding">
-                    <section id="inicio" class="section-padding">
-                        <h2>CYNTHIA MARTEL</h2>
-                        <h3 class="profesion1">Programación</h3>
-                        <h3 class="profesion2">Desarrollo Creativo</h3>  
-                        <ul id="redessociales">
-                            <li class="linkedin"><a href="https://www.linkedin.com/in/cynthia-del-mar-martel-mart%C3%ADn-73b066186/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="https://www.instagram.com/codingdreamroutes.cynthiamart/" target="_blank"> <i class="fa-brands fa-square-instagram"></i></a></li>
-                        </ul>
-                    </section>
-                    <!-- Fin de bloque de Inicio -->
-                    <!-- Bloque de sobre mí -->
-                    <section id="sobremi" class="section-padding">
-                        
-                        <section class="contenedor-sobremi">
-                            <img src="imagenes/cyn_foto_cv_250.jpeg" alt="Foto Cynthia Martel" height="200">
-                            <section class="texto-sobremi">  
-                                <p>Soy <strong>Cynthia del Mar Martel</strong>, apasionada del desarrollo web y multiplataforma.</p>
-                                
-                                <!-- <p>Creativa y muy curiosa desde que tengo uso de razón, en mi tiempo libre escribo y trabajo en un proyector personal sobre cine
-                                Recibiendo clases desde pequeña en piano, y ahora autodidacta en otros instrumentos como el bajo y la batería.</p>
-                                
-                                <p>Además, hago varios deportes; escalada, OCR, calistenia y skateboarding. 
-                                Este último me enseña a que cuando <strong> uno se cae, siempre tiene la opción de levantarse con más fuerza.</strong></p>  -->
-                                
-                                <p>Terminé el grado en medicinia veterinaria porque siento amor incondicional por la ciencia y los animales. 
-                                Poco después, la enseñanza me empezó a llamar mucho la atención, y fui profesora en dos centros durante tres años, 
-                                hasta que <strong>descubrí el mundo de la programación</strong>. Me fui introduciendo por cuenta propia con conceptos básicos,
-                                pero terminó por absorverme por completo y sin frenos.</p>
-                                <p>Decidí entonces, cursar los estudios reglados como <strong>Técnico Superior en 
-                                Desarrollo de Aplicaciones Multiplataformas.</strong>
-                                <p>Siento que es aquí, en donde<strong> he encontrado mi sitio</strong>, descubriendo que es en este mundo, se mezclan la creatividad, la practicidad y el diseño artístico. 
-                                Disciplinas de las que estoy enamorada.</p>
-                                
-                                
-                                <p>Siempre en <strong>contínuo crecimiento y aprendizaje</strong>, buscando formas de <strong>reinventarme constantemente.</strong>
-                                </p>
-                                <a href="#portfolio">
-                                    <div class="masinfo"><button type="button">MÁS INFO</button></div>
-                                </a>
-                            </section>
-                        </section>
-                    </section>
-                </section>
-                        
-                <!--Fin de bloque sobre mí-->
-                <!--Bloque Portfolio-->
-                    <section id="portfolio" class="seccion section-padding">
-                        <h2>PORTFOLIO</h2>
-                        <h3>UNA MIRADA MÁS PROFUNDA SOBRE MI TRABAJO</h3>
-                        <div class="fila-portfolio">
-                            <div class="card-portfolio">
-                                <img src="./imagenes/webPortfolio.png" alt="Portfolio 1">
-                                <p>TRABAJO WEB</p>
-                                <div class="masinfo"><button type="button">MÁS INFO</buttom></div>
-                            </div>
-                                <div class="card-portfolio">
-                                <img src="./imagenes/githubcodigo.png" alt="Portfolio 2">
-                                <p>PROYECTOS EN GITHUB</p>
-                                <div class="masinfo"><button type="button">MÁS INFO</buttom></div>
-                            </div>
-                            <div class="card-portfolio">
-                                <img src="./imagenes/DiseñosPortfolio.png" alt="Portfolio 3">
-                                <p>DISEÑOS</p>
-                                <div class="masinfo"><button type="button">MÁS INFO</buttom></div>
-                            </div>
-                            <div class="card-portfolio">
-                                <img src="./imagenes/batteriaPortofolio.png" alt="Portfolio 4">
-                                <p>INFO PERSONAL</p>
-                                <div class="masinfo"><button type="button">MÁS INFO</buttom></div>
-                            </div>
-                            <!---PARA ENLAZAR VIDEOS LOCALES 
-                            <div class="card-portfolio">
-                                <video controls>
-                                    <source src="./media/"
-                                </video>
-                            </div>--->
-                            <!---PARA ENLAZAR VIDEOS YOUTUBE
-                            <div class="card-portfolio">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/jfKfPfyJRdk?si=yu_Fm-4-_h9GgLzV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>>
-                            </div>--->
-                            
-                        </div>
-                    </section>
-                    <!--Fin Bloque Portfolio-->
-                    <!--Bloque experiencia-->
-                    <section id="experiencia" class="seccion section-padding">
-                        <div class="titular-experienciayskillss">
-                            <h2 class=h2experiencia>EXPERIENCIA</h2>
-                            <h2 class=h2skills>& SKILLS</h2>
-                        </div>
-                        
-                        <div class="fila-experiencia">
-                            <div class="card-experiencia">
-                                <p>PRÁCTICAS EN EMPRESA</p> 
-                            </div>
-                                <div class="card-experiencia">
-                                <p>PRROYECTOS PERSONALES</p>  
-                            </div>
-                        </div>
-                    </section>
-                    
-                    <!--Bloque Contactar-->   
-                    <section id="contactar" class="section-padding">
-                        <h2>CONTACTA CONMIGO</h2>
-                        <h3>ENVÍAME TUS DUDAS</h3>
-                        <form action="#">
-                            <div class="itemform">
-                                <label for="Nombre">Nombre</label>
-                                <input type="text" id="Nombre" name="nombre" minlength="2" maxlenght="64" size="30" required>
 
-                            </div>
-                            <div class="itemform">
-                                <label for="Empresa">Empresa</label>
-                                <input type="text" id="Empresa" name="nombre" minlength="2" maxlenght="128" size="30">
+  </article>
+    <!--Footer-->
+    <footer>
+      <ul>
+          <li><i class="fa-brands fa-usb fa-rotate-270" style="color: #ffffff;"></i></li>
+      </ul>
+    </footer>
+  </body>
+</html>
 
-                            </div>
-                            <div class="itemform">
-                                <label for="Email">Email</label>
-                                <input type="email" id="Email" name="nombre" minlength="10" maxlenght="128" size="30" required>
-                            </div>
-                            <div class="itemform">
-                                <label for="mensaje">Mensaje</label>
-                                <textarea name="mensaje" id="mensaje" cols="33" row="5"></textarea>
-                            </div>
-                                
-                            <div class="itemform">
-                                <input type="submit" name="enviar" value="CONTACTAR">
-                            </div>
-
-                        </form>
-                    </section>
-                </article>
-
-                <!--Footer-->
-                <footer>
-                    <ul>
-                        <li><i class="fa-brands fa-usb fa-rotate-270" style="color: #ffffff;"></i></li>
-                    </ul>
-                </footer>
-        </body>
-    </html>
