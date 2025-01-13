@@ -100,13 +100,27 @@ i:hover{
     
 }
 
-#contenedor-mepresento {
+#contenedor-inicio {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     /*min-height: 97vh;*/
     padding-top: 20px;
     clear: both; /* Asegura que el bloque "Sobre mí" esté debajo de cualquier elemento flotante */   
+}
+#div-contenedor-inicio {
+    background: rgba(0, 0, 0, 0.4);
+    margin: 0;
+    max-width: 1300px;
+    padding: 20px;
+    border-radius: auto;
+}
+
+@media (min-width: 2200px) { /* sm:w-1/2 */
+    #div-contenedor-inicio {
+        background: rgba(50, 50, 50, 0.25);
+        margin: 0 auto;
+    }
 }
 
 
@@ -242,17 +256,4 @@ footer i{
     font-size:30px;
 }
 
-#prueba-contenedores {
-    background: rgba(0, 0, 0, 0.5);
-    margin: 0;
-    max-width: 1300px;
-    padding: 20px;
-}
-
-@media (min-width: 2200px) { /* sm:w-1/2 */
-    #prueba-contenedores {
-        background: rgba(50, 50, 50, 0.25);
-        margin: 0 auto;
-    }
-}
 
