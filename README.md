@@ -1,5 +1,7 @@
 # My First HTML Project – Portfolio Template 🖥️
 
+[Pincha aquí para acceder a la vista HTML / Click here to view the HTML version](https://cynthiamartel.github.io/)  
+
 ![Proyecto en desarrollo](imagenes/image.png)
 
 > **Aviso / Notice:**  
